@@ -28,7 +28,8 @@ const Header = () => {
     ]
   return (
     <div className=' flex flex-row items-center gap-10 justify-between p-4 shadow-sm'>
-        <Image alt='logo' src='/logo.svg' width={180} height={80} />
+        {/* <Image alt='logo' src='/logo.svg' width={180} height={80} /> */}
+        <h5 className=' font-bold text-2xl cursor-pointer'>DocApp</h5>
         <ul className=' md:flex flex flex-row gap-8 cursor-pointer hidden'>
             {nav.map((item,index)=>(
                 <Link href={item.path} >
